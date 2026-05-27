@@ -56,4 +56,4 @@ int main() {
     return 0;
 }
 
-printf (Feito por Otávio Augusto Sampaio Ferreira) https://github.com/otaferreira2202-spec/calculadora-3-c/new/main
+printf ("\nFeito por Otávio Augusto Sampaio Ferreira (https://github.com/otaferreira2202-spec/calculadora-3-c/new/main)")
