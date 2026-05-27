@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+double somar(double n1, double n2) {
+    return n1 + n2;
+}
+
+double subtrair(double n1, double n2) {
+    return n1 - n2;
+}
+
+double multiplicar(double n1, double n2) {
+    return n1 * n2;
+}
+
+double dividir(double n1, double n2) {
+    return n1 / n2;
+}
+
+
+int main() {
+    int operacao;
+    double numero1, numero2;
+    double resultado;
+
+    printf("Escolha a operacao:\n1 - Soma\n2 - Subtracao\n3 - Multiplicacao\n4 - Divisao\nOpcao: ");
+    scanf("%d", &operacao);
+
+
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &numero1);
+    printf("Digite o segundo numero: ");
+    scanf("%lf", &numero2);
+
+    printf("\n-------------------\n");
+
+ 
+    switch (operacao) {
+        case 1:
+ 
+            resultado = somar(numero1, numero2);
+            printf("Resultado da Soma: %.2f\n", resultado);
+            break;
+            
+        case 2:
+            resultado = subtrair(numero1, numero2);
+            printf("Resultado da Subtracao: %.2f\n", resultado);
+            break;
+            
+        case 3:
+            resultado = multiplicar(numero1, numero2);
+            printf("Resultado da Multiplicacao: %.2f\n", resultado);
+            break;
+            
+        case 4:
+
+            if (numero2 != 0) {
+                resultado = dividir(numero1, numero2);
+                printf("Resultado da Divisao: %.2f\n", resultado);
+            } else {
+                printf("Erro: Nao eh possivel dividir por zero!\n");
+            }
+            break;
+            
+        default:
+            printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
+
+printf (Feito por Otávio Augusto Sampaio Ferreira) https://github.com/otaferreira2202-spec/calculadora-3-c/new/main
