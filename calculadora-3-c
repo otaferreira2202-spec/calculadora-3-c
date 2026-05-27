@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+
+    int operacao;
+    double numero1, numero2;
+    double resultado;
+
+    printf("Escolha a operacao:\n");
+    printf("1 - Soma\n");
+    printf("2 - Subtracao\n");
+    printf("3 - Multiplicacao\n");
+    printf("4 - Divisao\n");
+    printf("Opcao: ");
+    scanf("%d", &operacao); 
+
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &numero1);
+
+    printf("Digite o segundo numero: ");
+    scanf("%lf", &numero2);
+
+    printf("\n-------------------------\n");
+
+    switch (operacao) {
+        case 1:
+            resultado = numero1 + numero2;
+            printf("Resultado da Soma: %.2f\n", resultado);
+            break;
+            
+        case 2:
+            resultado = numero1 - numero2;
+            printf("Resultado da Subtracao: %.2f\n", resultado);
+            break;
+            
+        case 3:
+            resultado = numero1 * numero2;
+            printf("Resultado da Multiplicacao: %.2f\n", resultado);
+            break;
+            
+        case 4:
+
+            if (numero2 != 0) {
+                resultado = numero1 / numero2;
+                printf("Resultado da Divisao: %.2f\n", resultado);
+            } else {
+                printf("Erro: Nao eh possivel dividir por zero!\n");
+            }
+            break;
+            
+        default:
+
+            printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
+
+printf (Feito por Otávio Augusto Sampaio Ferreira) https://github.com/otaferreira2202-spec/calculadora-3-c/new/main
